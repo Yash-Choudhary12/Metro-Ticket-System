@@ -75,10 +75,6 @@ This project provides a backend solution for a Metro Ticket Management System, i
 6. Start the Tomcat server and access the application at:
    http://localhost:8080/metro-ticket-backend
 
----
-
-## Usage
-
 
 
 ## Contribution Guidelines
@@ -109,5 +105,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ## Contact
 For any inquiries or support, please contact:
 - **Name:** Yash Choudhary
-- **Email:** yashdhankad1224@gmail.com
 
