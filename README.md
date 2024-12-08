@@ -24,7 +24,7 @@ This project provides a backend solution for a Metro Ticket Management System, i
 - **Java Version:** Java 21
 - **Frameworks:** Servlets, Hibernate
 - **Database:** MySQL 8.0.36
-- **Server:** Apache Tomcat (v8 or later)
+- **Server:** Apache Tomcat (v9.0 or later)
 - **Dependencies:**
   - Razorpay SDK (v1.4.6)
   - Hibernate Core
@@ -36,7 +36,7 @@ This project provides a backend solution for a Metro Ticket Management System, i
 ### Prerequisites
 - Java 21 installed on your system.
 - MySQL database server (v8.0.36) configured.
-- Apache Tomcat (v9 or later).
+- Apache Tomcat (v9.0 or later).
 - Maven build tool installed.
 
 ### Setup Steps
