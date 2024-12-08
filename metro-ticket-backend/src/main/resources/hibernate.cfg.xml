@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    
+    <!-- JDBC Database connection settings -->
+    <session-factory>
+        <!-- JDBC driver class -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+        <!-- JDBC URL for MySQL -->
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/metro_ticket_db?useSSL=false&amp;serverTimezone=UTC</property>
+
+        <!-- JDBC driver -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+
+        <!-- JDBC user credentials -->
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">1224</property>
+
+        <!-- JDBC connection pool settings -->
+        <property name="hibernate.c3p0.min_size">1</property>
+        <property name="hibernate.c3p0.max_size">15</property>
+        <property name="hibernate.c3p0.timeout">300</property>
+        <property name="hibernate.c3p0.max_statements">50</property>
+        <property name="hibernate.c3p0.idle_test_period">3000</property>
+
+        <!-- Enable Hibernate's automatic session context management -->
+        <property name="hibernate.current_session_context_class">thread</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="hibernate.show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+        
+
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.generate_statistics">true</property>
+        
+
+        <!-- Drop old tables and re-create -->
+        <property name="hibernate.hbm2ddl.import_files">import.sql</property>
+
+        <!-- Mention annotated classes -->
+        <mapping class="com.metro.models.User"/>
+        <mapping class="com.metro.models.Ticket"/>
+        <mapping class="com.metro.models.ScannedTicket"/>
+        <mapping class="com.metro.models.Station"/>
+    </session-factory>
+</hibernate-configuration>

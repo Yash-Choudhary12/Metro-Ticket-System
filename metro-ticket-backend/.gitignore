@@ -1,0 +1,11 @@
+# Ignore Eclipse metadata
+.classpath
+.project
+.settings/
+
+# Ignore build output
+/bin/
+/target/
+
+# Ignore other sensitive files
+config.properties
