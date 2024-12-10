@@ -1,6 +1,6 @@
 # Metro Ticket Management
 
-This project provides a backend solution for a Metro Ticket Management System, implemented using Servlets, Hibernate (v5.6.15), and SQL (v8.0.36). It supports ticket booking, user authentication, station management, and ticket validation.
+This project provides a solution for a Metro Ticket Management System, implemented using Servlets, Hibernate (v5.6.15), and SQL (v8.0.36). It supports ticket booking, user authentication, station management, and ticket validation.
 
 ---
 
